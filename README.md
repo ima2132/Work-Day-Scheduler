@@ -1,4 +1,4 @@
-# work-day-scheduler
+# Work Day Scheduler
 ## Table of Contents 
 - [Description](#description)
 - [User Story](#user-story)
