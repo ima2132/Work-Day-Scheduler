@@ -3,10 +3,10 @@
 // in the html.
 
 $(document).ready(function () {
-  // displays the current day at the top of the calendar
+// displays the current day at the top of the calendar
   $("#currentDay").text(dayjs().format("dddd, MMMM D"));
 
-  // generate the time blocks for standard business hours
+// generate the time blocks for standard business hours
   var startTime = 9; // 9 AM 
   var endTime = 17; // 5 PM (17 PM in military standard time)
 
@@ -20,3 +20,48 @@ $(document).ready(function () {
     timeBlock.append(hourText, description, saveBtn);
     $(".container-fluid .row").append(timeBlock);
   }
+
+// loads saved events from local storage
+   loadEvents();
+
+// event listener for save button clicks
+   $(".saveBtn").on("click", function () {
+     var hour = $(this).parent().attr("id");
+     var eventText = $(this).siblings(".description").val().trim();
+ 
+// saves event to local storage
+     saveEvent(hour, eventText);
+   });
+
+   function loadEvents() {
+    // loads saved events from local storage and populate the text areas
+    for (var hour = 9; hour <= 17; hour++) {
+      var eventText = localStorage.getItem("event-" + hour);
+      if (eventText) {
+        $("#hour-" + hour + " .description").val(eventText);
+      }
+    }
+  }
+
+
+
+// get the current time
+ function updateTimeBlockColors() {
+  var now = new Date(); 
+  
+// update the time block colors based on the current time
+for (var hour =9; hour <=17; hour++){
+  var timeBlock = $("#hour-"+hour);
+ 
+// if the current hour is BEFORE the hour of the time block, then the time block should be in the past
+if (now.getHours() < hour) {
+  timeBlock.addClass("past");
+} else if (now.getHours() == hour) {
+// if the current hour is EQUAL TO the hour of the time block, then the time block should be in the present
+  timeBlock.addClass("present");
+} else {
+// if the current hour is AFTER the hour of the time block, then the time block should be in the future
+  timeBlock.addClass("future");
+}
+}
+}
