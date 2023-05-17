@@ -83,7 +83,7 @@ $(document).ready(function () {
 // time block colors updated based on current time
 
   // if the current hour is before the hour of the time block, then the time block should be in the past
-  if (now.getHours() > blockHour) {
+  if (now.getHours()> blockHour) {
   $(this).removeClass("present");
   $(this).removeClass("future");
   $(this).addClass("past");

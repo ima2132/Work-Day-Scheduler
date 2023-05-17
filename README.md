@@ -47,6 +47,10 @@ Users are able to view the work day deconstructed into time blocks. These time b
 ## Screenshots
 The colors displayed on the page indicate past, present, and future time blocks. Gray symbolizes the past, red is the current hour, and green represents future work hours of the day. 
 
+Suppose it is 12 PM. The time blocks will display the following image:
+
+
+
 
 To save these assignments, please input the tasks/events and click the save button. Once the browser is refreshed, the saved items will remain on the page. 
 
