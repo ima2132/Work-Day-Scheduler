@@ -35,7 +35,7 @@ $(document).ready(function () {
 
    function loadEvents() {
     // loads saved events from local storage and populate the text areas
-    for (var hour = 9; hour <= 17; hour++) {
+    for (var hour = 9; hour <=17; hour++) {
       var eventText = localStorage.getItem("event-" + hour);
       if (eventText) {
         $("#hour-" + hour + " .description").val(eventText);
@@ -45,7 +45,7 @@ $(document).ready(function () {
 
 // this updates time block colors based on the current time
  updateTimeBlockColors();
- setInterval(updateTimeBlockColors, 60000); // Update every minute
+ setInterval(updateTimeBlockColors, 6000); // Update every minute
 });
 
 
