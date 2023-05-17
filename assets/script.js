@@ -10,7 +10,7 @@ $(document).ready(function () {
 
   // displays a working clock 
   function displayTime() {
-    var currentTime = today.format('hh:mm a');
+    var currentTime = today.format('hh:mm:ss a');
     $("#current-time").text(currentTime); 
   }
 
