@@ -5,11 +5,15 @@
 - [Acceptance Criteria](#acceptance-criteria)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
 - [License](#license)
 - [Deployed URL](#deployed-url)
 
 ## Description 
-This project is a simple calendar application that allows users to input events or appointments throughout working hours (9AM-5PM). 
+This project is a simple calendar application that allows users to input events or appointments throughout work hours (9AM-5PM). The time blocks are color coded with gray displayed as the past, red as the present time, and green as future hours depending on the current time. 
+
+This application is designed to run in a web browser and incorporates dynamically updated HTML and CSS powered by jQuery. 
+
 ## User Story
 AS AN employee with a busy schedule
 
@@ -36,7 +40,17 @@ SO THAT I can manage my time effectively
 N/A
 
 ## Usage
-To use this application, the user will first view the current date and time displayed at the top of the calendar. They can start inputting their events into the respective time slots. 
+To use this application, the user will first click the deployed link. They will then view the current date and time displayed at the top of the calendar. Users can start inputting their events into the respective time slots. 
+
+Users are able to view the work day deconstructed into time blocks. These time blocks are color coded with gray as the past, red as the present hour, and green as future work hours of the day. The application allows users to save an event/task for each time slot every time they refresh the page through local storage. 
+
+## Screenshots
+The colors displayed on the page indicate past, present, and future time blocks. Gray symbolizes the past, red is the current hour, and green represents future work hours of the day. 
+
+
+To save these assignments, please input the tasks/events and click the save button. Once the browser is refreshed, the saved items will remain on the page. 
+
+
 ## License
 Please refer to the LICENSE listed in the repo.
 
