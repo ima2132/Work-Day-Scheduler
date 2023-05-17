@@ -43,11 +43,6 @@ $(document).ready(function () {
     }
   }
 
-// this updates time block colors based on the current time
- updateTimeBlockColors();
- setInterval(updateTimeBlockColors, 6000); // Update every minute
-});
-
 
 // get the current time
  function updateTimeBlockColors() {
