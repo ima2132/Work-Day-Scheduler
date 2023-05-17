@@ -34,7 +34,7 @@ $(document).ready(function () {
   // appends the time block to the calendar container
       $(".calendar").append(newTimeBlock);
     }
-  
+
   // loads saved events from local storage
     loadEvents();
 
@@ -84,15 +84,15 @@ $(document).ready(function () {
 
   // if the current hour is before the hour of the time block, then the time block should be in the past
   if (now.getHours() > blockHour) {
-    $(this).removeClass("present");
-    $(this).removeClass("future");
-    $(this).addClass("past");
+  $(this).removeClass("present");
+  $(this).removeClass("future");
+  $(this).addClass("past");
   }
   // if the current hour is equal to the hour of the time block, then the time block should be in the present
   else if (now.getHours() === blockHour) {
-$(this).removeClass("past");
-$(this).removeClass("future");
-$(this).addClass("present");
+  $(this).removeClass("past");
+  $(this).removeClass("future");
+  $(this).addClass("present");
   } else {
   // if the current hour is after the hour of the time block, then the time block should be in the future
   $(this).removeClass("past");
@@ -110,3 +110,5 @@ $(this).addClass("present");
   $("#hour-" + hour + " .description").val(localStorage.getItem("hour-" + hour));
   }
   });
+
+ 
