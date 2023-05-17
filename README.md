@@ -15,11 +15,7 @@ This project is a simple calendar application that allows users to input events 
 This application is designed to run in a web browser and incorporates dynamically updated HTML and CSS powered by jQuery. 
 
 ## User Story
-AS AN employee with a busy schedule
-
-I WANT to add important events to a daily planner
-
-SO THAT I can manage my time effectively
+As an employee with a busy schedule, I want to add important events to a daily planner so that I can manage my time effectively.
 
 ## Acceptance Criteria
 * GIVEN I am using a daily planner to create a schedule
@@ -36,18 +32,18 @@ SO THAT I can manage my time effectively
 * WHEN I refresh the page
 * THEN the saved events persist
 
+
 ## Installation 
 N/A
 
 ## Usage
 To use this application, the user will first click the deployed link. They will then view the current date and time displayed at the top of the calendar. Users can start inputting their events into the respective time slots. 
 
-Users are able to view the work day deconstructed into time blocks. These time blocks are color coded with gray as the past, red as the present hour, and green as future work hours of the day. The application allows users to save an event/task for each time slot every time they refresh the page through local storage. 
-
+Users are able to view the work day deconstructed into time blocks. These time blocks are color coded with gray as the past, red as the present hour, and green as future work hours of the day. The application saves the entered events using local storage, ensuring that the saved events persist even after refreshing the page. 
 ## Screenshots
-The colors displayed on the page indicate past, present, and future time blocks. Gray symbolizes the past, red is the current hour, and green represents future work hours of the day. 
+The following screenshot illustrates the color coding of time blocks based on past, present, and future hours. Gray represents past hours, red represents the current hour, and green represents future work hours of the day.
 
-Suppose it is 12 PM. The time blocks will display the following image:
+Suppose it is 12 PM (the time is modified for demonstration purposes). The time blocks will display the following image:
 
 <img width="1436" alt="Screen Shot 2023-05-17 at 2 40 27 AM" src="https://github.com/ima2132/Work-Day-Scheduler/assets/117132129/9ef75355-05b5-4f0d-9d05-8b54f434c153">
 
