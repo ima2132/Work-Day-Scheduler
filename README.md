@@ -9,7 +9,7 @@
 - [Deployed URL](#deployed-url)
 
 ## Description 
-
+This project is a simple calendar application that allows users to input events or appointments throughout working hours (9AM-5PM). 
 ## User Story
 AS AN employee with a busy schedule
 
@@ -36,7 +36,7 @@ SO THAT I can manage my time effectively
 N/A
 
 ## Usage
-
+To use this application, the user will first view the current date and time displayed at the top of the calendar. They can start inputting their events into the respective time slots. 
 ## License
 Please refer to the LICENSE listed in the repo.
 

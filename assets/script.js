@@ -10,6 +10,18 @@ $(document).ready(function () {
 // displays the current day at the top of the calendar
   $("#currentDay").text(today.format('[Today is] dddd, MMMM D, YYYY'));
 
+// displays a working clock 
+function displayTime() {
+  var currentTime = today.format('hh:mm a');
+  $("#current-time").text(currentTime); 
+}
+// call for the displayTime function 
+displayTime();
+
+// updates the clock every second
+setInterval(displayTime,1000);
+
+
 // generate the time blocks for standard business hours
 for (var hour = 9; hour <= 17; hour++) {
   var newTimeBlock = $("<div>").attr("id", "hour-" + hour).addClass("row time-block");
@@ -34,13 +46,13 @@ for (var hour = 9; hour <= 17; hour++) {
      var eventText = $(this).siblings(".description").val().trim();
  
 // saves event to local storage
-     saveEvent(hour, eventText);
+     localStorage.setItem(hour, eventText);
    });
 
    function loadEvents() {
     // loads saved events from local storage and populate the text areas
     for (var hour = 9; hour <=17; hour++) {
-      var eventText = localStorage.getItem("event-" + hour);
+      var eventText = localStorage.getItem("hour-" + hour);
       if (eventText) {
         $("#hour-" + hour + " .description").val(eventText);
       }
