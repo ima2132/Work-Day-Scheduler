@@ -49,11 +49,12 @@ The colors displayed on the page indicate past, present, and future time blocks.
 
 Suppose it is 12 PM. The time blocks will display the following image:
 
-
+<img width="1436" alt="Screen Shot 2023-05-17 at 2 40 27 AM" src="https://github.com/ima2132/Work-Day-Scheduler/assets/117132129/9ef75355-05b5-4f0d-9d05-8b54f434c153">
 
 
 To save these assignments, please input the tasks/events and click the save button. Once the browser is refreshed, the saved items will remain on the page. 
 
+<img width="1440" alt="Screen Shot 2023-05-17 at 2 41 07 AM" src="https://github.com/ima2132/Work-Day-Scheduler/assets/117132129/ead72123-fa51-4d97-ab0c-a2d128261241">
 
 ## License
 Please refer to the LICENSE listed in the repo.
