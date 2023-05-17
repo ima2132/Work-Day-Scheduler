@@ -50,13 +50,13 @@ for (var hour = 9; hour <= 17; hour++) {
 // function to add color to the time blocks based on the current time
 function getTime() {
   $(".time-block").each(function() {
-    var blockHour = parseInt($(this).attr("id"));
+    var blockHour = parseInt($(this).attr("id").substring(5));
     var now = new Date();
 
     // update the time block colors based on the current time
 
     // if the current hour is BEFORE the hour of the time block, then the time block should be in the past
-    if (now.getHours() < blockHour) {
+    if (now.getHours() > blockHour) {
       $(this).removeClass("present");
       $(this).removeClass("future");
       $(this).addClass("past");
