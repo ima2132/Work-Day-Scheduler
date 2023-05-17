@@ -37,9 +37,15 @@ As an employee with a busy schedule, I want to add important events to a daily p
 N/A
 
 ## Usage
-To use this application, the user will first click the deployed link. They will then view the current date and time displayed at the top of the calendar. Users can start inputting their events into the respective time slots. 
+To use this application, simply click the deployed link. Users will see the current date and time displayed at the top of the calendar. They can start inputting their tasks/events into the respective time slots. 
 
-Users are able to view the work day deconstructed into time blocks. These time blocks are color coded with gray as the past, red as the present hour, and green as future work hours of the day. The application saves the entered events using local storage, ensuring that the saved events persist even after refreshing the page. 
+The workday is deconstructed into time blocks, which are color-coded as follows:
+
+* Gray: Past hours
+* Red: Current hour
+* Green: Future work hours of the day
+
+The application saves the entered events using local storage, ensuring that the saved events persist even after refreshing the page. 
 ## Screenshots
 The following screenshot illustrates the color coding of time blocks based on past, present, and future hours. Gray represents past hours, red represents the current hour, and green represents future work hours of the day.
 
